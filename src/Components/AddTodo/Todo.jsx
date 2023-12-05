@@ -9,7 +9,7 @@ export default function Todo({ handleSubmit }) {
           type="text"
           placeholder="Please enter task title"
           name="title"
-          maxLength={20}
+          maxLength={30}
         />
 
         <input
