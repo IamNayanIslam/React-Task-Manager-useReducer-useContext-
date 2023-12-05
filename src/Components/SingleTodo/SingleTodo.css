@@ -1,0 +1,108 @@
+.singleTodo {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #8a8a8a; */
+  box-shadow: rgba(64, 164, 255, 0.35) 0px 5px 15px;
+  background: rgba(64, 164, 255, 0.5);
+  transition: 0.3s ease all;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 2px 10px;
+  background: #40a4ff;
+  color: #fff;
+  position: relative;
+}
+
+.done {
+  color: #fff;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  flex-basis: 10%;
+}
+
+.done:hover {
+  scale: calc(1.2);
+}
+
+.done + h4 {
+  word-break: break-all;
+}
+
+.complete {
+  position: relative;
+  color: #8aff8a;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  flex-basis: 10%;
+}
+
+.complete:hover {
+  scale: calc(1.2);
+}
+
+.complete + h4 {
+  text-decoration: line-through;
+  user-select: none;
+  color: #40a4ff;
+  word-break: break-all;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+
+.complete + h4::before {
+  content: "Completed!";
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  /* font-size: 18px; */
+  opacity: 1;
+  z-index: 2;
+  user-select: none;
+  color: #8aff8a;
+}
+
+.description {
+  min-height: 150px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.du {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.update {
+  color: dodgerblue;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.update:hover {
+  scale: calc(1.2);
+}
+
+.delete {
+  color: #f32d01;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.delete:hover {
+  scale: calc(1.2);
+}
+
+@media screen and (max-width: 500px) {
+  .singleTodo {
+    width: 90%;
+  }
+}

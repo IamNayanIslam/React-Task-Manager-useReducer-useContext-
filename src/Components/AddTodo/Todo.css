@@ -1,0 +1,40 @@
+.form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: rgba(64, 164, 255, 0.25) 0px 54px 55px,
+    rgba(64, 164, 255, 0.12) 0px -12px 30px,
+    rgba(64, 164, 255, 0.12) 0px 4px 6px, rgba(64, 164, 255, 0.17) 0px 12px 13px,
+    rgba(64, 164, 255, 0.09) 0px -3px 5px;
+  user-select: none;
+}
+
+form h2 {
+  text-align: center;
+  color: #40a4ff;
+}
+
+form input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #40a4ff;
+  outline: none;
+}
+
+form button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: #40a4ff;
+  color: #fff;
+  cursor: pointer;
+}
